@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>ProjetoPOO</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="logo" style="display: flex; align-items: center;">
+         <span style="color:#01939c; font-size:26px; font-weight:bold; letter-spacing: 1px;margin-left: 20px;">Cadastrar</span>
+        </div>
+        <ul class="nav-links">
+            <li class="inputs"><a href="search.html">Consultar por ID</a></li>
+            <li class="inputs"><a href="http://localhost:8080/ProjetoPOO/ProdutoControle?Botao=consultartodos">Lista de itens</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <section class="forms">
+            <form name="f1" action="ProdutoControle" method="GET">
+                <ul class="lista_forms">
+                    <h1>Insira os dados do Produto</h1>
+                    <li class="form_input">
+                        <label>Nome do Produto:</label>
+                        <input type="text" name="nomeprod" size="78">
+                    </li>
+                    <li class="form_input">
+                        <label>Processador:</label>
+                        <input type="text" name="CPU" size="78">
+                    </li>
+                    <li class="form_input">
+                        <label>Memoria RAM:</label>
+                        <input type="text" name="RAM" size="78">
+                    </li>
+                    <li class="form_input">
+                        <label>Placa de vídeo:</label>
+                        <input type="text" name="GPU" size="78">
+                    </li>
+                    <li class="form_input">
+                        <label>Polegadas da tela:</label>
+                        <input type="text" name="Tela" size="78">
+                    </li>
+                    <li class="form_input">
+                        <label>Resolução:</label>
+                        <input type="text" name="resolucao" size="78">
+                    </li>
+                    <li class="form_input">
+                        <label>Descrição:</label>
+                        <input type="text" name="descricao" size="78">
+                    </li>
+                    <h1>Itens adicionais</h1>
+                    <div class="checkbox_div">
+                        <li class="form_input">
+                            <label class="container_check">Possuí Wi-fi?</label>   
+                            <input type="text" name="wifi" size="78">                 
+                        </li>
+                        <li class="form_input">
+                            <label class="container_check">Possuí Bluetooth?</label>    
+                            <input type="text" name="bt" size="78">
+                        </li>
+                        <li class="form_input">
+                            <label class="container_check">Possuí teclado numerico?</label> 
+                            <input type="text" name="numpad" size="78">   
+                        </li>
+                    </div>
+                    <button name="Botao" type="submit" value="cadastrar">Cadastrar</button>
+                </ul>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <P>Desenvolvido por Erico Marin e João Salustiano</P>
+    </footer>
+</body>
+</html>
